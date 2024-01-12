@@ -6,7 +6,24 @@ body{
     font-family: "Open Sans", sans-serif;
     overflow-x: hidden;
 }
-
+.button{
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+ul{
+    list-style: none;
+}
+i{
+    color: #1dc8cd;
+}
+svg{
+    fill: #1dc8cd;
+}
 a{
     text-decoration: none;
 }
@@ -49,6 +66,10 @@ p, li{
         font-weight: lighter;
         margin: 0 auto;
     }
+}
+
+section{
+    width: 100%;
 }
 
 

@@ -56,26 +56,36 @@
     }
     ul{
         list-style: none;
+        padding-left: 0;
     }
     li{
         color: #666666;
-
-
+        line-height: 24px;
+        margin-bottom: 14px;
+        margin-left: 0;
+        i{
+            font-size: 20px;
+            padding-right: 4px;
+        }
     }
 }
+main{
+    width: 100%;
 
+}
 .features{
     width: 100%;
-    padding: 0 15px;
+    // padding: 0 15px;
 }
 .features-top{
     width: 100%;
-    padding: 0 15px;
+    padding: 0 30px;
     .features-img{
         padding: 0 20px;
         margin-bottom: 14px;
     }
 }
+
 .feature{
     text-align: center;
     padding-bottom: 30px;
@@ -92,8 +102,9 @@
 .features-row{
     display: flex;
     flex-wrap: wrap-reverse;
-    background-color: #eff5f5;
+    background-color: white;
     width: 100%;
+    padding: 0 15px;
     h2{
         font-weight: bolder;
         color: black;
@@ -110,7 +121,296 @@
     p{
         color: #666666;
     }
-    
 }
+.features-row:nth-of-type(3){
+    display: flex;
+    flex-wrap: wrap;
+}
+.row1, .row3{
+    width: 100%;
+    background-color: #eff5f5;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.features-row2-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.row2{
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .row2-txt-p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-bottom: 30px;
+        svg{
+            float: left;
+            width: 150px;
+            height: 60px;
+            padding-right: 10px;
+        }
+        p{
+            line-height: 24px;
+            color: #777;
+        }
+        
+    }
+}
+.row3{
+    .p-i{
+        padding-top: 30px;
+        line-height: 24px;
+        i{
+            font-size: 50px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            float: left;
+        }
+    }
+}
+
+.call{
+    background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), 
+    url(../images/call-to-action-bg.jpg) fixed center center;
+    background-size: cover;
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+    a{
+        padding: 10px 30px;
+    }
+    h3{
+        font-weight: bolder;
+        font-size: 26px;
+    }
+    p{
+        margin-bottom: 50px;
+    }
+}
+
+.more-features{
+    background-color: #eff5f5;
+    padding: 0 15px;
+    padding-bottom: 60px;
+}
+.more-features-4{
+    display: grid;
+
+}
+
+.more-features-square{
+    text-align: center;
+    background-color: white;
+    padding: 50px 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    svg{
+        width: 60px;
+        height: 60px;
+    }
+
+    h4{
+        font-weight: bolder;
+        color: black;
+        font-size: 18px;
+    }
+    p{
+        color: grey;
+        font-weight: lighter;
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+    }
+}
+
+
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    gap: 30px;
+    width: 100%;
+    background-color: white;
+    .client{
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        img{
+            max-width: 100%;
+    opacity: 0.5;
+    transition: 0.3s;
+    padding: 15px 0;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.pricing{
+    width: 100%;
+    background-color: #eff5f5;
+}
+.prices{
+    width: 100%;
+    padding: 60px 15px;
+    .middle-price{
+        border: 1px solid #1dc8cd;
+    }
+    .price{
+        background-color: white;
+        text-align: center;
+        padding: 30px 40px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        ul{
+            text-align: left;
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+        li{
+            color: rgb(152, 149, 149);
+            line-height: 24px;
+            margin-bottom: 14px;
+            margin-left: 0;
+            i{
+                font-size: 20px;
+                padding-right: 4px;
+            }
+        }
+        .button-price{
+            background-color: #666666;
+            color: white;
+            padding: 6px 30px;
+            font-size: 14px;
+            border: none;
+        }
+        .price-middle-button{
+            background: linear-gradient(45deg, #1de099, #1dc8cd);
+            padding: 6px 30px;
+            border: none;
+        }
+        h3{
+            font-size: 28px;
+        }
+        h4{
+            font-size: 46px;
+            color: #1dc8cd;
+            font-weight: 300;
+            margin: 0 auto;
+            span{
+                color: #bababa;
+                font-size: 20px;
+            }
+            sup{
+                font-size: 20px;
+                vertical-align: middle;
+                font-weight: lighter;
+            }
+        }
+    }
+}
+
+.f-a-q{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .titre-section{
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 15px;
+    ul{
+        margin-left: 0;
+        padding: 0;
+        font-size: 18px;
+        li{
+            border-bottom: 1px solid lightgray;
+            padding: 20px 0;
+            a{
+                display: flex;
+                justify-content: space-between;
+                color: #666666;
+                i{
+                    color: black;
+                    
+                }
+                
+            }
+            .hide-p{
+                display: none;
+
+            }
+        }
+    }
+}
+.team{
+    background-color: #eff5f5;
+    text-align: center;
+    padding-bottom: 60px;
+
+}
+.team-member{
+        h4{
+            font-size: 18px;
+            font-weight: bolder;
+            margin: 10px auto;
+        }
+        span{
+            font-size: 12px;
+            font-style: italic;
+        }
+}
+.team-member-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+    svg{
+        fill:#b3b3b3;
+    }
+}
+
+.contact{
+    text-align: left;
+    padding: 60px 20px;
+}
+.contact-left{
+    h1{
+        text-transform: uppercase;
+        color: #1dc8cd;
+        font-size: 40px;
+    }
+    p{
+        color: grey;
+        font-weight: lighter;
+        line-height: 26px;
+    }
+}
+.contact-social{
+    display: flex;
+    gap: 10px;
+    a{
+        border: 1px solid #1dc8cd;
+        border-radius: 50%;
+        padding: 10px;
+    }
+}
+
 
   
